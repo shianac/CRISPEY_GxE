@@ -17,6 +17,5 @@ Files
 4. deseq2_competition_foldchange.ipynb: takes output from (3) and calculates Log2CFoldChange for each barcode+UMI combination, for analysis in "Crispey_GxE_Analysis" folder
 
 Setup:
-1. extract test data file
-2. make empty folder "./test_readprocessing"
-3. run code files
+1. make empty folder "./test_readprocessing"
+2. run code files
