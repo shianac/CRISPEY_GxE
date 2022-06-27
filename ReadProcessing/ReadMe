@@ -1,0 +1,22 @@
+Read Processing workflow for CRISPEY-BAR:
+
+data input:
+zipfile containing sample data from SCM triplicate #2 in Chen, Kern et al.
+Files:
+1. fastq/: folder containing fastq.gz files for R1 and R2)
+2. barcode_table_with_6umi.tsv: table for preappended table of barcode, RE site and UMI sequences designed 
+3. pool_assignment.xlsx: table for well assignment for arrayed pool synthesis
+4. test-Sample Key.tsv: sample key for fastq files to samples name
+5. TEST_SAMPLE_INFO.tsv: sample information (pool ID, condition, timepoint, flask, generation time)
+
+code:
+Files
+1. ReadProcessing_Nextflow.config: processes fastq from barcode sequencing for CRISPEY-BAR (76 cycles, 12 cycles for R1 and 64 cycles for R2)
+2. counts_merging.ipynb: merges counts files output from (1) in to table format
+3. deseq2_input.ipynb: formats counts file from (2) and sample information for DeSeq2 analysis
+4. deseq2_competition_foldchange.ipynb: takes output from (3) and calculates Log2CFoldChange for each barcode+UMI combination, for analysis in "Crispey_GxE_Analysis" folder
+
+Setup:
+1. extract test data file
+2. make empty folder "./test_readprocessing"
+3. run code files
