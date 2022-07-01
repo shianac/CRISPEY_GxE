@@ -15,7 +15,9 @@ Files
 2. counts_merging.ipynb: merges counts files output from (1) in to table format
 3. deseq2_input.ipynb: formats counts file from (2) and sample information for DeSeq2 analysis
 4. deseq2_competition_foldchange.ipynb: takes output from (3) and calculates Log2CFoldChange for each barcode+UMI combination, for analysis in "Crispey_GxE_Analysis" folder
+5. CRISPEY_GXE.yml: contains conda environment needed for read processing
 
 Setup:
-1. make empty folder "./test_readprocessing"
-2. run code files
+1. setup conda environment or install related packages and dependencies from CRISPEY_GXE.yml
+2. make empty folder "./test_readprocessing"
+3. run code files
